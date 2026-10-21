@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "segmentation-split-toll"
+version = "1.0.0"
+description = "Automatic large-granularity segmentation of continuous text"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24,<3",
+    "transformers>=4.41,<6",
+    "sentence-transformers>=3,<7",
+]
+
+[project.scripts]
+segmentation-split = "segmentation_split_toll.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+segmentation_split_toll = ["profile.json"]

@@ -1,0 +1,21 @@
+{
+  "name": "large-text-single-scale-depth-dp-v1",
+  "model": "intfloat/multilingual-e5-small",
+  "model_revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "window_paragraphs_each_side": 2,
+  "smoothing_width": 3,
+  "mad_factor": 1.4826,
+  "epsilon": 0.000001,
+  "clip": 3.0,
+  "internal_weight": 1.0,
+  "boundary_weight": 1.0,
+  "cut_penalty": 0.8,
+  "min_tokens": 2000,
+  "max_tokens": 8000,
+  "fallback_atom_tokens": 512,
+  "token_count_special_tokens": false,
+  "headings_force_boundaries": false,
+  "cut_count": "automatic",
+  "tie_policy": "fewer cuts, then earliest last start",
+  "short_input_policy": "return unchanged, status below_minimum"
+}
